@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DAY ONE - Casas</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,600;0,700;0,800;0,900;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="bg-glow blue-top"></div>
+    <div class="bg-glow pink-bottom"></div>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar glass">
+        <div class="container nav-container">
+            <div class="logo">
+                <a href="index.html" class="logo-text">
+                    <span class="text-primary">D</span>AY ONE
+                </a>
+            </div>
+            
+            <ul class="nav-links">
+                <li><a href="index.html">INICIO</a></li>
+                <li><a href="facciones.html">FACCIONES</a></li>
+                <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSfUeQKy574hQDw7PgmTMZ7LwbjWmcLIfikVffbPudmNFep9xA/viewform" target="_blank">FORMULARIO DE ACCESO</a></li>
+                <li><a href="casas.html" class="active">CASAS</a></li>
+                <li><a href="vip.html">VIP</a></li>
+            </ul>
+
+            <div class="nav-right">
+                <a href="https://discord.gg/4UwHEQPs" target="_blank" class="btn btn-ghost discord-login">
+                    <i class="fa-brands fa-discord"></i> INICIAR SESIÓN
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="page-header container">
+        <h1 class="page-title">
+            <span class="text-primary">C</span>ASAS 
+            <span style="display: inline-flex; align-items: center; justify-content: center; gap: 8px; margin-left: 10px; color: var(--primary);">
+                <i class="fa-solid fa-key" style="font-size: 0.4em; opacity: 0.6; filter: drop-shadow(0 0 10px var(--primary)); transform: scaleX(-1);"></i>
+                <i class="fa-solid fa-house" style="font-size: 0.8em; filter: drop-shadow(0 0 20px var(--primary));"></i>
+                <i class="fa-solid fa-key" style="font-size: 0.4em; opacity: 0.6; filter: drop-shadow(0 0 10px var(--primary));"></i>
+            </span>
+        </h1>
+        
+        <!-- Tier Navigation -->
+        <div class="tier-nav">
+            <a href="#caravanas" class="tier-nav-btn">CARAVANAS 10.000$</a>
+            <a href="#pequenas" class="tier-nav-btn">PEQUEÑAS 25.000$</a>
+            <a href="#medianas" class="tier-nav-btn">MEDIANAS 50.000$</a>
+            <a href="#grandes" class="tier-nav-btn">GRANDES 100.000$ - 350.000$</a>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container">
+
+        <!-- CARAVANAS -->
+        <section id="caravanas" class="tier-section">
+            <h2 class="tier-title">CARAVANAS 10.000$</h2>
+            <div class="gallery-grid">
+                
+                <div class="gallery-item">
+                    <div class="placeholder-square">
+                        <!-- PARA AÑADIR TU IMAGEN: Borra la etiqueta <i> que está debajo y descomenta la etiqueta <img> para poner el link a tu foto -->
+                        <!-- <img src="assets/casa1.jpg" alt="Casa" style="width:100%;height:100%;object-fit:cover;border-radius:12px;"> -->
+                        <i class="fa-solid fa-image placeholder-icon"></i>
+                    </div>
+                    <span class="item-title">Caravana 1 | Day One</span>
+                </div>
+                <div class="gallery-item">
+                    <div class="placeholder-square">
+                        <i class="fa-solid fa-image placeholder-icon"></i>
+                    </div>
+                    <span class="item-title">Caravana 2 | Day One</span>
+                </div>
+                <div class="gallery-item">
+                    <div class="placeholder-square">
+                        <i class="fa-solid fa-image placeholder-icon"></i>
+                    </div>
+                    <span class="item-title">Caravana 3 | Day One</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- PEQUEÑAS -->
+        <section id="pequenas" class="tier-section">
+            <h2 class="tier-title">PEQUEÑAS 25.000$</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <div class="placeholder-square"><i class="fa-solid fa-image placeholder-icon"></i></div>
+                    <span class="item-title">Casa 1 | Day One</span>
+                </div>
+                <div class="gallery-item">
+                    <div class="placeholder-square"><i class="fa-solid fa-image placeholder-icon"></i></div>
+                    <span class="item-title">Casa 2 | Day One</span>
+                </div>
+                <div class="gallery-item">
+                    <div class="placeholder-square"><i class="fa-solid fa-image placeholder-icon"></i></div>
+                    <span class="item-title">Casa 3 | Day One</span>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- MEDIANAS -->
+        <section id="medianas" class="tier-section">
+            <h2 class="tier-title">MEDIANAS 50.000$</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <div class="placeholder-square"><i class="fa-solid fa-image placeholder-icon"></i></div>
+                    <span class="item-title">Casa 1 | Day One</span>
+                </div>
+                <div class="gallery-item">
+                    <div class="placeholder-square"><i class="fa-solid fa-image placeholder-icon"></i></div>
+                    <span class="item-title">Casa 2 | Day One</span>
+                </div>
+                <div class="gallery-item">
+                    <div class="placeholder-square"><i class="fa-solid fa-image placeholder-icon"></i></div>
+                    <span class="item-title">Casa 3 | Day One</span>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- GRANDES -->
+        <section id="grandes" class="tier-section">
+            <h2 class="tier-title">GRANDES 100.000$ - 350.000$</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <div class="placeholder-square"><i class="fa-solid fa-image placeholder-icon"></i></div>
+                    <span class="item-title">Casa 1 | Day One</span>
+                </div>
+                <div class="gallery-item">
+                    <div class="placeholder-square"><i class="fa-solid fa-image placeholder-icon"></i></div>
+                    <span class="item-title">Casa 2 | Day One</span>
+                </div>
+                <div class="gallery-item">
+                    <div class="placeholder-square"><i class="fa-solid fa-image placeholder-icon"></i></div>
+                    <span class="item-title">Casa 3 | Day One</span>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer container">
+        <div class="footer-content glass">
+            <div class="footer-left">
+                <div class="logo-text">
+                    <span class="text-primary">D</span>AY ONE
+                </div>
+                <p class="footer-desc">Servidor de Roleplay exclusivo. La historia la escribes tú.</p>
+            </div>
+            <div class="footer-links" style="margin-left: auto;">
+                <a href="https://discord.gg/4UwHEQPs" target="_blank"><i class="fa-brands fa-discord"></i> Discord</a>
+                <a href="terminos.html" style="font-size: 0.8rem; opacity: 0.8;">Términos y Condiciones</a>
+                <a href="privacidad.html" style="font-size: 0.8rem; opacity: 0.8;">Privacidad</a>
+            </div>
+        </div>
+        <p class="copyright">&copy; 2026 DAY ONE Roleplay. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>

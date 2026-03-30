@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DAY ONE - Servidor de Roleplay</title>
+    <!-- Use Google Fonts (Montserrat for a gaming/modern aesthetic) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,600;0,700;0,800;0,900;1,800;1,900&display=swap" rel="stylesheet">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Background decorative gradients -->
+    <div class="bg-glow blue-top"></div>
+    <div class="bg-glow pink-bottom"></div>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar glass">
+        <div class="container nav-container">
+            <div class="logo">
+                <!-- Puedes sustituir esto por tu imagen de logo. Ejemplo: <img src="assets/tu_imagen.png" alt="DAY ONE"> -->
+                <a href="#" class="logo-text">
+                    <span class="text-primary">D</span>AY ONE
+                </a>
+            </div>
+            
+            <ul class="nav-links">
+                <li><a href="#" class="active">INICIO</a></li>
+                <li><a href="facciones.html">FACCIONES</a></li>
+                <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSfUeQKy574hQDw7PgmTMZ7LwbjWmcLIfikVffbPudmNFep9xA/viewform" target="_blank">FORMULARIO DE ACCESO</a></li>
+                <li><a href="casas.html">CASAS</a></li>
+                <li><a href="vip.html">VIP</a></li>
+            </ul>
+
+            <div class="nav-right">
+                <a href="https://discord.gg/4UwHEQPs" target="_blank" class="btn btn-ghost discord-login">
+                    <i class="fa-brands fa-discord"></i> INICIAR SESIÓN
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="container">
+            <img class="hero-logo" src="assets/logo-hero.png" alt="DAY ONE ROLEPLAY">
+            <p class="hero-desc">Forja tu propio destino en una ciudad llena de posibilidades. Tu historia empieza aquí.</p>
+
+            <div class="featured-card glass-glow border-primary">
+                <p>Recuerda enviar el formulario para obtener la whitelist antes de entrar al servidor.</p>
+                <div class="card-actions">
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSfUeQKy574hQDw7PgmTMZ7LwbjWmcLIfikVffbPudmNFep9xA/viewform" target="_blank" class="btn btn-primary">ENVIAR FORMULARIO</a>
+                    <!-- Discord Link updated as requested -->
+                    <a href="https://discord.gg/4UwHEQPs" target="_blank" class="btn btn-ghost btn-discord-link">DISCORD</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- How it Works Section -->
+    <section class="how-it-works container">
+        <h2 class="section-title">CÓMO FUNCIONA</h2>
+        <div class="steps-grid">
+            
+            <div class="step-card glass">
+                <div class="step-header">
+                    <div class="step-icon"><i class="fa-solid fa-user"></i></div>
+                    <div class="step-number text-primary">01</div>
+                </div>
+                <h3>Inicia sesión</h3>
+                <p>Conecta tu cuenta de Discord para comenzar el proceso.</p>
+            </div>
+
+            <div class="step-card glass">
+                <div class="step-header">
+                    <div class="step-icon"><i class="fa-solid fa-list-check"></i></div>
+                    <div class="step-number text-primary">02</div>
+                </div>
+                <h3>Formulario</h3>
+                <p>Selecciona el formulario de acceso para comenzar tu aventura.</p>
+            </div>
+
+            <div class="step-card glass">
+                <div class="step-header">
+                    <div class="step-icon"><i class="fa-solid fa-pen-to-square"></i></div>
+                    <div class="step-number text-primary">03</div>
+                </div>
+                <h3>Rellena y envía</h3>
+                <p>Completa todos los campos cuidadosamente y envía tu solicitud.</p>
+            </div>
+
+            <div class="step-card glass">
+                <div class="step-header">
+                    <div class="step-icon"><i class="fa-solid fa-hourglass-half"></i></div>
+                    <div class="step-number text-primary">04</div>
+                </div>
+                <h3>Espera respuesta</h3>
+                <p>Nuestro equipo revisará tu solicitud y te dará una respuesta pronto.</p>
+            </div>
+
+            <div class="step-card glass">
+                <div class="step-header">
+                    <div class="step-icon"><i class="fa-solid fa-handshake"></i></div>
+                    <div class="step-number text-primary">05</div>
+                </div>
+                <h3>¡Bienvenido!</h3>
+                <p>Una vez aprobado, serás oficialmente parte de la comunidad.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Discover More Section -->
+    <section class="discover-more container">
+        <h2 class="section-title">DESCUBRE MÁS</h2>
+        <div class="cards-grid">
+            
+            <div class="large-card glass img-bg">
+                <!-- Para poner tus imágenes de fondo, puedes modificar el CSS (.card-normativa) o añadir una imagen aquí -->
+                <div class="card-content">
+                    <h3><span class="text-primary">N</span>ORMATIVA</h3>
+                    <p>Conoce las reglas para disfrutar de la mejor experiencia.</p>
+                    <a href="https://day-one.gitbook.io/normativa-oficial-day-one-rp" target="_blank" class="btn btn-primary w-fit mt-4">LEER NORMATIVA</a>
+                </div>
+            </div>
+
+            <div class="large-card glass img-bg">
+                <div class="card-content">
+                    <h3><span class="text-primary">E</span>NTRAR AL SERVIDOR</h3>
+                    <p>Da el primer paso para iniciar tu historia.</p>
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSfUeQKy574hQDw7PgmTMZ7LwbjWmcLIfikVffbPudmNFep9xA/viewform" target="_blank" class="btn btn-primary w-fit mt-4">ENVIAR FORMULARIO</a>
+                </div>
+            </div>
+
+            <div class="large-card glass img-bg split-card">
+                <div class="card-content">
+                    <h3><span class="text-primary">F</span>ACCIONES</h3>
+                    <p>Disfruta en Day One con diferentes roles.</p>
+                    <a href="facciones.html" class="btn btn-primary w-fit mt-4">VER FACCIONES</a>
+                </div>
+            </div>
+
+
+
+            <div class="large-card glass img-bg split-card full-width">
+                <div class="card-content">
+                    <div class="icon-large"><i class="fa-solid fa-user-shield"></i></div>
+                    <h3><span class="text-primary">S</span>TAFF</h3>
+                    <p>Deja aquí tu postulación para staff</p>
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSfpYvR2bqRuwPtj0AYIXHo4t832PUCGTHd90vznVv9pT8E_pg/viewform?usp=publish-editor" target="_blank" class="btn btn-primary w-fit mt-4">POSTÚLATE</a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer container">
+        <div class="footer-content glass">
+            <div class="footer-left">
+                <div class="logo-text">
+                    <span class="text-primary">D</span>AY ONE
+                </div>
+                <p class="footer-desc">Servidor de Roleplay exclusivo. La historia la escribes tú.</p>
+            </div>
+            <div class="footer-links" style="margin-left: auto;">
+                <a href="https://discord.gg/4UwHEQPs" target="_blank"><i class="fa-brands fa-discord"></i> Discord</a>
+                <a href="terminos.html" style="font-size: 0.8rem; opacity: 0.8;">Términos y Condiciones</a>
+                <a href="privacidad.html" style="font-size: 0.8rem; opacity: 0.8;">Privacidad</a>
+            </div>
+        </div>
+        <p class="copyright">&copy; 2026 DAY ONE Roleplay. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>
