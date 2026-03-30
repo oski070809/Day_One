@@ -65,7 +65,7 @@
                 <div class="netflix-row disable-scrollbar" id="vip-vehicles-row">
                     
                     <!-- Placeholder cards -->
-                    <div class="netflix-card">
+                    <div class="netflix-card" onclick="openModal(this)">
                         <div class="card-img-placeholder">
                             <i class="fa-solid fa-car"></i>
                         </div>
@@ -74,7 +74,7 @@
                         </div>
                     </div>
 
-                    <div class="netflix-card">
+                    <div class="netflix-card" onclick="openModal(this)">
                         <div class="card-img-placeholder">
                             <i class="fa-solid fa-car"></i>
                         </div>
@@ -83,7 +83,7 @@
                         </div>
                     </div>
 
-                    <div class="netflix-card">
+                    <div class="netflix-card" onclick="openModal(this)">
                         <div class="card-img-placeholder">
                             <i class="fa-solid fa-car"></i>
                         </div>
@@ -92,7 +92,7 @@
                         </div>
                     </div>
 
-                    <div class="netflix-card">
+                    <div class="netflix-card" onclick="openModal(this)">
                         <div class="card-img-placeholder">
                             <i class="fa-solid fa-car"></i>
                         </div>
@@ -101,7 +101,7 @@
                         </div>
                     </div>
 
-                    <div class="netflix-card">
+                    <div class="netflix-card" onclick="openModal(this)">
                         <div class="card-img-placeholder">
                             <i class="fa-solid fa-car"></i>
                         </div>
@@ -110,7 +110,7 @@
                         </div>
                     </div>
 
-                    <div class="netflix-card">
+                    <div class="netflix-card" onclick="openModal(this)">
                         <div class="card-img-placeholder">
                             <i class="fa-solid fa-car"></i>
                         </div>
@@ -119,7 +119,7 @@
                         </div>
                     </div>
 
-                    <div class="netflix-card">
+                    <div class="netflix-card" onclick="openModal(this)">
                         <div class="card-img-placeholder">
                             <i class="fa-solid fa-car"></i>
                         </div>
@@ -128,7 +128,7 @@
                         </div>
                     </div>
 
-                    <div class="netflix-card">
+                    <div class="netflix-card" onclick="openModal(this)">
                         <div class="card-img-placeholder">
                             <i class="fa-solid fa-car"></i>
                         </div>
@@ -137,7 +137,7 @@
                         </div>
                     </div>
 
-                    <div class="netflix-card">
+                    <div class="netflix-card" onclick="openModal(this)">
                         <div class="card-img-placeholder">
                             <i class="fa-solid fa-car"></i>
                         </div>
@@ -146,7 +146,7 @@
                         </div>
                     </div>
 
-                    <div class="netflix-card">
+                    <div class="netflix-card" onclick="openModal(this)">
                         <div class="card-img-placeholder">
                             <i class="fa-solid fa-car"></i>
                         </div>
@@ -218,12 +218,31 @@
             const modal = document.getElementById("imageModal");
             const modalContent = document.getElementById("modalImageContainer");
             
+            // Clean up to avoid issues with previous content
             modalContent.innerHTML = element.innerHTML;
             modal.style.display = "flex";
             modalContent.style.flexDirection = "column";
             modalContent.style.gap = "1.5rem";
 
-            // Adjust img if it exists
+            // If it's a placeholder with icon
+            const placeholder = modalContent.querySelector(".card-img-placeholder");
+            if (placeholder) {
+                placeholder.style.height = "auto";
+                placeholder.style.padding = "4rem";
+                placeholder.style.background = "rgba(0,0,0,0.3)";
+                placeholder.style.border = "1px solid var(--primary)";
+                placeholder.style.borderRadius = "20px";
+                placeholder.style.boxShadow = "0 0 50px rgba(175, 48, 78, 0.3)";
+                
+                const icon = placeholder.querySelector("i");
+                if (icon) {
+                    icon.style.fontSize = "8rem";
+                    icon.style.opacity = "1";
+                    icon.style.filter = "drop-shadow(0 0 20px var(--primary))";
+                }
+            }
+
+            // Adjust img if it exists (for when actual images are added)
             const img = modalContent.querySelector("img");
             if (img) {
                 img.style.width = "100%";
@@ -231,27 +250,21 @@
                 img.style.maxHeight = "75vh";
                 img.style.objectFit = "contain";
                 img.style.borderRadius = "12px";
-                img.style.boxShadow = "0 0 30px var(--primary)";
-            } else {
-                // If it is an icon
-                const icon = modalContent.querySelector("i");
-                if (icon) {
-                    icon.style.fontSize = "10rem";
-                    icon.style.color = "var(--primary)";
-                    icon.style.textShadow = "0 0 30px rgba(175, 48, 78, 0.5)";
-                }
+                img.style.boxShadow = "0 0 40px var(--primary)";
             }
 
-            // Adjust text if it exists
+            // Adjust text
             const info = modalContent.querySelector(".card-info");
             const h4 = modalContent.querySelector("h4");
             if (info && h4) {
                 info.style.padding = "0";
-                h4.style.fontSize = "1.8rem";
+                h4.style.fontSize = "2rem";
+                h4.style.fontWeight = "900";
                 h4.style.textTransform = "uppercase";
-                h4.style.letterSpacing = "2px";
-                h4.style.textShadow = "0 0 15px rgba(255, 255, 255, 0.3)";
+                h4.style.letterSpacing = "4px";
+                h4.style.textShadow = "0 0 15px rgba(255, 255, 255, 0.4)";
                 h4.style.margin = "0";
+                h4.style.color = "var(--primary)";
             }
         }
 
