@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DAY ONE - Privacidad 🔒</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,600;0,700;0,800;0,900;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .terms-container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 10rem 0 8rem;
+        }
+
+        .terms-card {
+            padding: 4rem;
+            margin-bottom: 2rem;
+            background: rgba(10, 10, 15, 0.7);
+            border: 1px solid var(--glass-border);
+            border-radius: 20px;
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+        }
+
+        .terms-section {
+            margin-bottom: 2.5rem;
+        }
+
+        .terms-section h2 {
+            font-size: 1.4rem;
+            color: var(--primary);
+            margin-bottom: 1rem;
+            text-transform: uppercase;
+            font-weight: 800;
+        }
+
+        .terms-section p {
+            color: var(--text-muted);
+            font-size: 1rem;
+            line-height: 1.8;
+            margin-bottom: 1rem;
+        }
+
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: var(--primary);
+            text-decoration: none;
+            font-weight: 700;
+            margin-bottom: 2rem;
+            transition: transform 0.3s ease;
+        }
+
+        .back-link:hover {
+            transform: translateX(-5px);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="bg-glow blue-top"></div>
+    <div class="bg-glow pink-bottom"></div>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar glass">
+        <div class="container nav-container">
+            <div class="logo">
+                <a href="index.html" class="logo-text">
+                    <span class="text-primary">D</span>AY ONE
+                </a>
+            </div>
+            
+            <ul class="nav-links">
+                <li><a href="index.html">INICIO</a></li>
+                <li><a href="facciones.html">FACCIONES</a></li>
+                <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSfUeQKy574hQDw7PgmTMZ7LwbjWmcLIfikVffbPudmNFep9xA/viewform" target="_blank">FORMULARIO DE ACCESO</a></li>
+                <li><a href="casas.html">CASAS</a></li>
+                <li><a href="vip.html">VIP</a></li>
+            </ul>
+
+            <div class="nav-right">
+                <a href="https://discord.gg/4UwHEQPs" target="_blank" class="btn btn-ghost discord-login">
+                    <i class="fa-brands fa-discord"></i> INICIAR SESIÓN
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container terms-container">
+        <a href="index.html" class="back-link"><i class="fas fa-arrow-left"></i> VOLVER</a>
+        <h1 class="page-title text-center"><span class="text-primary">P</span>OLÍTICA DE PRIVACIDAD</h1>
+        
+        <div class="terms-card">
+            <div class="terms-section">
+                <h2>1. Recopilación de Información</h2>
+                <p>En DAY ONE Roleplay, solo recopilamos la información mínima necesaria para garantizar el funcionamiento del servidor y la seguridad de la comunidad. Esto incluye tu ID de Discord, tu nombre de usuario y los datos proporcionados voluntariamente en los formularios de acceso (whitelist).</p>
+            </div>
+
+            <div class="terms-section">
+                <h2>2. Uso de los Datos</h2>
+                <p>Tus datos se utilizan exclusivamente para gestionar tu acceso al servidor, realizar un seguimiento de tu progreso en el juego y mantener la comunicación a través de nuestros canales oficiales. Nunca venderemos ni compartiremos tu información personal con terceros ajenos al proyecto.</p>
+            </div>
+
+            <div class="terms-section">
+                <h2>3. Almacenamiento Local (Cookies)</h2>
+                <p>Nuestra web utiliza almacenamiento local (Local Storage) para recordar si has aceptado nuestros términos y condiciones. Esto nos permite mejorar tu experiencia de navegación evitando que el aviso legal aparezca repetidamente.</p>
+            </div>
+
+            <div class="terms-section">
+                <h2>4. Seguridad</h2>
+                <p>Implementamos medidas de seguridad técnicas y organizativas para proteger tus datos contra el acceso no autorizado, la pérdida o la alteración. El acceso a los datos está restringido únicamente al personal administrativo del servidor.</p>
+            </div>
+
+            <div class="terms-section">
+                <h2>5. Derechos del Usuario</h2>
+                <p>Como usuario, tienes derecho a solicitar el acceso, rectificación o eliminación de tus datos de nuestra base de datos en cualquier momento a través de un ticket en nuestro servidor de Discord.</p>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer container">
+        <div class="footer-content glass">
+            <div class="footer-left">
+                <div class="logo-text">
+                    <span class="text-primary">D</span>AY ONE
+                </div>
+                <p class="footer-desc">Servidor de Roleplay exclusivo. La historia la escribes tú.</p>
+            </div>
+            <div class="footer-links" style="margin-left: auto;">
+                <a href="https://discord.gg/4UwHEQPs" target="_blank"><i class="fa-brands fa-discord"></i> Discord</a>
+                <a href="terminos.html" style="font-size: 0.8rem; opacity: 0.8;">Términos y Condiciones</a>
+                <a href="privacidad.html" style="font-size: 0.8rem; opacity: 0.8;">Privacidad</a>
+            </div>
+        </div>
+        <p class="copyright">&copy; 2026 DAY ONE Roleplay. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>
