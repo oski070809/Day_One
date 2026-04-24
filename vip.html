@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DAY ONE - VIP</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,600;0,700;0,800;0,900;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <div class="bg-glow blue-top"></div>
+    <div class="bg-glow pink-bottom"></div>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar glass">
+        <div class="container nav-container">
+            <div class="logo">
+                <a href="index.html" class="logo-text">
+                    <span class="text-primary">D</span>AY ONE
+                </a>
+            </div>
+
+            <ul class="nav-links">
+                <li><a href="index.html">INICIO</a></li>
+                <li><a href="facciones.html">FACCIONES</a></li>
+                <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSfUeQKy574hQDw7PgmTMZ7LwbjWmcLIfikVffbPudmNFep9xA/viewform"
+                        target="_blank">FORMULARIO DE ACCESO</a></li>
+                <li><a href="casas.html">CASAS</a></li>
+                <li><a href="vip.html" class="active">VIP</a></li>
+            </ul>
+
+            <div class="nav-right">
+                <a href="https://discord.gg/2w2SakPv6j" target="_blank" class="btn btn-ghost discord-login">
+                    <i class="fa-brands fa-discord"></i> INICIAR SESIÓN
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="page-header container">
+        <h1 class="page-title">
+            <span class="text-primary">V</span>IP
+            <span
+                style="display: inline-flex; align-items: center; justify-content: center; gap: 8px; margin-left: 10px; color: var(--primary);">
+                <i class="fa-solid fa-star"
+                    style="font-size: 0.4em; opacity: 0.6; filter: drop-shadow(0 0 10px var(--primary));"></i>
+                <i class="fa-solid fa-star" style="font-size: 0.8em; filter: drop-shadow(0 0 20px var(--primary));"></i>
+                <i class="fa-solid fa-star"
+                    style="font-size: 0.4em; opacity: 0.6; filter: drop-shadow(0 0 10px var(--primary));"></i>
+            </span>
+        </h1>
+        <p class="hero-desc">Consulta los costes de experiencia y recompensas para la mejor experiencia. Utiliza tus XP
+            en todo momento.</p>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container vip-container">
+
+        <!-- SECCIÓN 1: SUPERDEPORTIVOS VIP -->
+        <div class="netflix-section">
+            <h2 class="tier-title"><i class="fa-solid fa-gauge-high"></i> SUPERDEPORTIVOS VIP</h2>
+            <div class="netflix-row-wrapper">
+                <button class="scroll-btn scroll-left" onclick="document.getElementById('row-super').scrollBy({left: -400, behavior: 'smooth'})"><i class="fa-solid fa-chevron-left"></i></button>
+                <div class="netflix-row disable-scrollbar" id="row-super">
+                    <!-- Dinka Jester Classic Hycade -->
+                    <div class="netflix-card" onclick="openModal(this)" data-images="assets/coches vip/Dinka Jester Classic Hycade.png,assets/coches vip/Dinka Jester Classic Hycade2.png">
+                        <div class="card-img">
+                            <img src="assets/coches vip/Dinka Jester Classic Hycade.png" alt="Dinka Jester Classic Hycade" class="primary-img">
+                            <img src="assets/coches vip/Dinka Jester Classic Hycade2.png" alt="Dinka Jester Classic Hycade" class="secondary-img">
+                        </div>
+                        <div class="card-info"><h4>Dinka Jester Classic Hycade</h4></div>
+                    </div>
+                    <!-- Dominator Kodes GT -->
+                    <div class="netflix-card" onclick="openModal(this)" data-images="assets/coches vip/Dominator Kodes GT.png,assets/coches vip/Dominator Kodes GT2.png">
+                        <div class="card-img"><img src="assets/coches vip/Dominator Kodes GT.png" alt="Dominator Kodes GT" class="primary-img"><img src="assets/coches vip/Dominator Kodes GT2.png" alt="Dominator Kodes GT" class="secondary-img"></div>
+                        <div class="card-info"><h4>Dominator Kodes GT</h4></div>
+                    </div>
+                    <!-- Flash Widebody -->
+                    <div class="netflix-card" onclick="openModal(this)" data-images="assets/coches vip/Flash Widebody.png,assets/coches vip/Flash Widebody2.png">
+                        <div class="card-img"><img src="assets/coches vip/Flash Widebody.png" alt="Flash Widebody" class="primary-img"><img src="assets/coches vip/Flash Widebody2.png" alt="Flash Widebody" class="secondary-img"></div>
+                        <div class="card-info"><h4>Flash Widebody</h4></div>
+                    </div>
+                    <!-- M8 MANSORY -->
+                    <div class="netflix-card" onclick="openModal(this)" data-images="assets/coches vip/M8 MANSORY.png,assets/coches vip/M8 MANSORY2.png">
+                        <div class="card-img"><img src="assets/coches vip/M8 MANSORY.png" alt="M8 MANSORY" class="primary-img"><img src="assets/coches vip/M8 MANSORY2.png" alt="M8 MANSORY" class="secondary-img"></div>
+                        <div class="card-info"><h4>M8 MANSORY</h4></div>
+                    </div>
+                    <!-- Misam GT 35 Custom -->
+                    <div class="netflix-card" onclick="openModal(this)" data-images="assets/coches vip/Misam GT 35 Custom.png,assets/coches vip/Misam GT 35 Custom2.png">
+                        <div class="card-img"><img src="assets/coches vip/Misam GT 35 Custom.png" alt="Misam GT 35 Custom" class="primary-img"><img src="assets/coches vip/Misam GT 35 Custom2.png" alt="Misam GT 35 Custom" class="secondary-img"></div>
+                        <div class="card-info"><h4>Misam GT 35 Custom</h4></div>
+                    </div>
+                    <!-- Misam R34 Paul Walker -->
+                    <div class="netflix-card" onclick="openModal(this)" data-images="assets/coches vip/Misam R34 Paul Walker.png,assets/coches vip/Misam R34 Paul Walker2.png">
+                        <div class="card-img"><img src="assets/coches vip/Misam R34 Paul Walker.png" alt="Misam R34 Paul Walker" class="primary-img"><img src="assets/coches vip/Misam R34 Paul Walker2.png" alt="Misam R34 Paul Walker" class="secondary-img"></div>
+                        <div class="card-info"><h4>Misam R34 Paul Walker</h4></div>
+                    </div>
+                    <!-- Porxe 911 Babygirl -->
+                    <div class="netflix-card" onclick="openModal(this)" data-images="assets/coches vip/Porxe 911 Babygirl.png,assets/coches vip/Porxe 911 Babygirl2.png">
+                        <div class="card-img"><img src="assets/coches vip/Porxe 911 Babygirl.png" alt="Porxe 911 Babygirl" class="primary-img"><img src="assets/coches vip/Porxe 911 Babygirl2.png" alt="Porxe 911 Babygirl" class="secondary-img"></div>
+                        <div class="card-info"><h4>Porxe 911 Babygirl</h4></div>
+                    </div>
+                    <!-- Schlagen Stravik GT Widebody -->
+                    <div class="netflix-card" onclick="openModal(this)" data-images="assets/coches vip/Schlagen Stravik GT Widebody.png,assets/coches vip/Schlagen Stravik GT Widebody2.png">
+                        <div class="card-img"><img src="assets/coches vip/Schlagen Stravik GT Widebody.png" alt="Schlagen Stravik GT Widebody" class="primary-img"><img src="assets/coches vip/Schlagen Stravik GT Widebody2.png" alt="Schlagen Stravik GT Widebody" class="secondary-img"></div>
+                        <div class="card-info"><h4>Schlagen Stravik GT Widebody</h4></div>
+                    </div>
+                    <!-- Tempesta Hycade -->
+                    <div class="netflix-card" onclick="openModal(this)" data-images="assets/coches vip/Tempesta Hycade.png,assets/coches vip/Tempesta Hycade2.png">
+                        <div class="card-img"><img src="assets/coches vip/Tempesta Hycade.png" alt="Tempesta Hycade" class="primary-img"><img src="assets/coches vip/Tempesta Hycade2.png" alt="Tempesta Hycade" class="secondary-img"></div>
+                        <div class="card-info"><h4>Tempesta Hycade</h4></div>
+                    </div>
+                    <!-- Tempesta Twins -->
+                    <div class="netflix-card" onclick="openModal(this)" data-images="assets/coches vip/Tempesta Twins.png,assets/coches vip/Tempesta Twins2.png">
+                        <div class="card-img"><img src="assets/coches vip/Tempesta Twins.png" alt="Tempesta Twins" class="primary-img"><img src="assets/coches vip/Tempesta Twins2.png" alt="Tempesta Twins" class="secondary-img"></div>
+                        <div class="card-info"><h4>Tempesta Twins</h4></div>
+                    </div>
+                    <!-- Thrax Venuum -->
+                    <div class="netflix-card" onclick="openModal(this)" data-images="assets/coches vip/Thrax Venuum.png,assets/coches vip/Thrax Venuum2.png">
+                        <div class="card-img"><img src="assets/coches vip/Thrax Venuum.png" alt="Thrax Venuum" class="primary-img"><img src="assets/coches vip/Thrax Venuum2.png" alt="Thrax Venuum" class="secondary-img"></div>
+                        <div class="card-info"><h4>Thrax Venuum</h4></div>
+                    </div>
+                    <!-- Truffade Gyro -->
+                    <div class="netflix-card" onclick="openModal(this)" data-images="assets/coches vip/Truffade Gyro.png,assets/coches vip/Truffade Gyro2.png">
+                        <div class="card-img"><img src="assets/coches vip/Truffade Gyro.png" alt="Truffade Gyro" class="primary-img"><img src="assets/coches vip/Truffade Gyro2.png" alt="Truffade Gyro" class="secondary-img"></div>
+                        <div class="card-info"><h4>Truffade Gyro</h4></div>
+                    </div>
+                    <!-- Truffade Nero -->
+                    <div class="netflix-card" onclick="openModal(this)" data-images="assets/coches vip/Truffade Nero.png,assets/coches vip/Truffade Nero2.png">
+                        <div class="card-img"><img src="assets/coches vip/Truffade Nero.png" alt="Truffade Nero" class="primary-img"><img src="assets/coches vip/Truffade Nero2.png" alt="Truffade Nero" class="secondary-img"></div>
+                        <div class="card-info"><h4>Truffade Nero</h4></div>
+                    </div>
+                    <!-- Truffade Nexus -->
+                    <div class="netflix-card" onclick="openModal(this)" data-images="assets/coches vip/Truffade Nexus.png,assets/coches vip/Truffade Nexus2.png">
+                        <div class="card-img"><img src="assets/coches vip/Truffade Nexus.png" alt="Truffade Nexus" class="primary-img"><img src="assets/coches vip/Truffade Nexus2.png" alt="Truffade Nexus" class="secondary-img"></div>
+                        <div class="card-info"><h4>Truffade Nexus</h4></div>
+                    </div>
+                    <!-- Ubermacht Zion Classic -->
+                    <div class="netflix-card" onclick="openModal(this)" data-images="assets/coches vip/Ubermacht Zion Classic.png,assets/coches vip/Ubermacht Zion Classic2.png">
+                        <div class="card-img"><img src="assets/coches vip/Ubermacht Zion Classic.png" alt="Ubermacht Zion Classic" class="primary-img"><img src="assets/coches vip/Ubermacht Zion Classic2.png" alt="Ubermacht Zion Classic" class="secondary-img"></div>
+                        <div class="card-info"><h4>Ubermacht Zion Classic</h4></div>
+                    </div>
+                    <!-- Vmv M3 E46 -->
+                    <div class="netflix-card" onclick="openModal(this)" data-images="assets/coches vip/Vmv M3 E46.png,assets/coches vip/Vmv M3 E462.png">
+                        <div class="card-img"><img src="assets/coches vip/Vmv M3 E46.png" alt="Vmv M3 E46" class="primary-img"><img src="assets/coches vip/Vmv M3 E462.png" alt="Vmv M3 E46" class="secondary-img"></div>
+                        <div class="card-info"><h4>Vmv M3 E46</h4></div>
+                    </div>
+                    <!-- ZR350 Hycade -->
+                    <div class="netflix-card" onclick="openModal(this)" data-images="assets/coches vip/ZR350 Hycade.png,assets/coches vip/ZR350 Hycade2.png">
+                        <div class="card-img"><img src="assets/coches vip/ZR350 Hycade.png" alt="ZR350 Hycade" class="primary-img"><img src="assets/coches vip/ZR350 Hycade2.png" alt="ZR350 Hycade" class="secondary-img"></div>
+                        <div class="card-info"><h4>ZR350 Hycade</h4></div>
+                    </div>
+                    <!-- ZR350 Piston Zero -->
+                    <div class="netflix-card" onclick="openModal(this)" data-images="assets/coches vip/ZR350 Piston Zero.png,assets/coches vip/ZR350 Piston Zero2.png">
+                        <div class="card-img"><img src="assets/coches vip/ZR350 Piston Zero.png" alt="ZR350 Piston Zero" class="primary-img"><img src="assets/coches vip/ZR350 Piston Zero2.png" alt="ZR350 Piston Zero" class="secondary-img"></div>
+                        <div class="card-info"><h4>ZR350 Piston Zero</h4></div>
+                    </div>
+                </div>
+                <button class="scroll-btn scroll-right" onclick="document.getElementById('row-super').scrollBy({left: 400, behavior: 'smooth'})"><i class="fa-solid fa-chevron-right"></i></button>
+            </div>
+        </div>
+
+        <!-- SECCIÓN 2: TODOTERRENOS & SEDANES VIP -->
+        <div class="netflix-section">
+            <h2 class="tier-title"><i class="fa-solid fa-mountain-sun"></i> TODOTERRENOS & SEDANES VIP</h2>
+            <div class="netflix-row-wrapper">
+                <button class="scroll-btn scroll-left" onclick="document.getElementById('row-suv').scrollBy({left: -400, behavior: 'smooth'})"><i class="fa-solid fa-chevron-left"></i></button>
+                <div class="netflix-row disable-scrollbar" id="row-suv">
+                    <!-- Bfista X -->
+                    <div class="netflix-card" onclick="openModal(this)" data-images="assets/coches vip/Bfista X.png,assets/coches vip/Bfista X2.png">
+                        <div class="card-img"><img src="assets/coches vip/Bfista X.png" alt="Bfista X" class="primary-img"><img src="assets/coches vip/Bfista X2.png" alt="Bfista X" class="secondary-img"></div>
+                        <div class="card-info"><h4>Bfista X</h4></div>
+                    </div>
+                    <!-- Cypher Wagon -->
+                    <div class="netflix-card" onclick="openModal(this)" data-images="assets/coches vip/Cypher Wagon.png,assets/coches vip/Cypher Wagon2.png">
+                        <div class="card-img"><img src="assets/coches vip/Cypher Wagon.png" alt="Cypher Wagon" class="primary-img"><img src="assets/coches vip/Cypher Wagon2.png" alt="Cypher Wagon" class="secondary-img"></div>
+                        <div class="card-info"><h4>Cypher Wagon</h4></div>
+                    </div>
+                    <!-- Dubsta Mono -->
+                    <div class="netflix-card" onclick="openModal(this)" data-images="assets/coches vip/Dubsta Mono.png,assets/coches vip/Dubsta Mono2.png">
+                        <div class="card-img"><img src="assets/coches vip/Dubsta Mono.png" alt="Dubsta Mono" class="primary-img"><img src="assets/coches vip/Dubsta Mono2.png" alt="Dubsta Mono" class="secondary-img"></div>
+                        <div class="card-info"><h4>Dubsta Mono</h4></div>
+                    </div>
+                    <!-- Fork Ram TRX -->
+                    <div class="netflix-card" onclick="openModal(this)" data-images="assets/coches vip/Fork Ram TRX.png,assets/coches vip/Fork Ram TRX2.png">
+                        <div class="card-img"><img src="assets/coches vip/Fork Ram TRX.png" alt="Fork Ram TRX" class="primary-img"><img src="assets/coches vip/Fork Ram TRX2.png" alt="Fork Ram TRX" class="secondary-img"></div>
+                        <div class="card-info"><h4>Fork Ram TRX</h4></div>
+                    </div>
+                    <!-- Misam Titan 17 -->
+                    <div class="netflix-card" onclick="openModal(this)" data-images="assets/coches vip/Misam Titan 17.png,assets/coches vip/Misam Titan 172.png">
+                        <div class="card-img"><img src="assets/coches vip/Misam Titan 17.png" alt="Misam Titan 17" class="primary-img"><img src="assets/coches vip/Misam Titan 172.png" alt="Misam Titan 17" class="secondary-img"></div>
+                        <div class="card-info"><h4>Misam Titan 17</h4></div>
+                    </div>
+                    <!-- Perfebes C63 -->
+                    <div class="netflix-card" onclick="openModal(this)" data-images="assets/coches vip/Perfebes C63.png,assets/coches vip/Perfebes C632.png">
+                        <div class="card-img"><img src="assets/coches vip/Perfebes C63.png" alt="Perfebes C63" class="primary-img"><img src="assets/coches vip/Perfebes C632.png" alt="Perfebes C63" class="secondary-img"></div>
+                        <div class="card-info"><h4>Perfebes C63</h4></div>
+                    </div>
+                    <!-- Perfebes S500 Mansory -->
+                    <div class="netflix-card" onclick="openModal(this)" data-images="assets/coches vip/Perfebes S500 Mansory.png,assets/coches vip/Perfebes S500 Mansory2.png">
+                        <div class="card-img"><img src="assets/coches vip/Perfebes S500 Mansory.png" alt="Perfebes S500 Mansory" class="primary-img"><img src="assets/coches vip/Perfebes S500 Mansory2.png" alt="Perfebes S500 Mansory" class="secondary-img"></div>
+                        <div class="card-info"><h4>Perfebes S500 Mansory</h4></div>
+                    </div>
+                    <!-- Rebla G-SUV -->
+                    <div class="netflix-card" onclick="openModal(this)" data-images="assets/coches vip/Rebla G-SUV.png,assets/coches vip/Rebla G-SUV2.png">
+                        <div class="card-img"><img src="assets/coches vip/Rebla G-SUV.png" alt="Rebla G-SUV" class="primary-img"><img src="assets/coches vip/Rebla G-SUV2.png" alt="Rebla G-SUV" class="secondary-img"></div>
+                        <div class="card-info"><h4>Rebla G-SUV</h4></div>
+                    </div>
+                    <!-- Riabu TF -->
+                    <div class="netflix-card" onclick="openModal(this)" data-images="assets/coches vip/Riabu TF.png,assets/coches vip/Riabu TF2.png">
+                        <div class="card-img"><img src="assets/coches vip/Riabu TF.png" alt="Riabu TF" class="primary-img"><img src="assets/coches vip/Riabu TF2.png" alt="Riabu TF" class="secondary-img"></div>
+                        <div class="card-info"><h4>Riabu TF</h4></div>
+                    </div>
+                    <!-- Riata X -->
+                    <div class="netflix-card" onclick="openModal(this)" data-images="assets/coches vip/Riata X.png,assets/coches vip/Riata X2.png">
+                        <div class="card-img"><img src="assets/coches vip/Riata X.png" alt="Riata X" class="primary-img"><img src="assets/coches vip/Riata X2.png" alt="Riata X" class="secondary-img"></div>
+                        <div class="card-info"><h4>Riata X</h4></div>
+                    </div>
+                    <!-- Roxanne Custom Widebody -->
+                    <div class="netflix-card" onclick="openModal(this)" data-images="assets/coches vip/Roxanne Custom Widebody.png,assets/coches vip/Roxanne Custom Widebody2.png">
+                        <div class="card-img"><img src="assets/coches vip/Roxanne Custom Widebody.png" alt="Roxanne Custom Widebody" class="primary-img"><img src="assets/coches vip/Roxanne Custom Widebody2.png" alt="Roxanne Custom Widebody" class="secondary-img"></div>
+                        <div class="card-info"><h4>Roxanne Custom Widebody</h4></div>
+                    </div>
+                    <!-- Toros XG -->
+                    <div class="netflix-card" onclick="openModal(this)" data-images="assets/coches vip/Toros XG.png,assets/coches vip/Toros XG2.png">
+                        <div class="card-img"><img src="assets/coches vip/Toros XG.png" alt="Toros XG" class="primary-img"><img src="assets/coches vip/Toros XG2.png" alt="Toros XG" class="secondary-img"></div>
+                        <div class="card-info"><h4>Toros XG</h4></div>
+                    </div>
+                </div>
+                <button class="scroll-btn scroll-right" onclick="document.getElementById('row-suv').scrollBy({left: 400, behavior: 'smooth'})"><i class="fa-solid fa-chevron-right"></i></button>
+            </div>
+        </div>
+
+        <!-- SECCIÓN 3: MOTOS & CHOPPERS VIP -->
+        <div class="netflix-section">
+            <h2 class="tier-title"><i class="fa-solid fa-motorcycle"></i> MOTOS & CHOPPERS VIP</h2>
+            <div class="netflix-row-wrapper">
+                <button class="scroll-btn scroll-left" onclick="document.getElementById('row-motos').scrollBy({left: -400, behavior: 'smooth'})"><i class="fa-solid fa-chevron-left"></i></button>
+                <div class="netflix-row disable-scrollbar" id="row-motos">
+                    <!-- Caguasaki ZX10R Astrobee -->
+                    <div class="netflix-card" onclick="openModal(this)" data-images="assets/coches vip/Caguasaki ZX10R Astrobee.png,assets/coches vip/Caguasaki ZX10R Astrobee2.png">
+                        <div class="card-img"><img src="assets/coches vip/Caguasaki ZX10R Astrobee.png" alt="Caguasaki ZX10R Astrobee" class="primary-img"><img src="assets/coches vip/Caguasaki ZX10R Astrobee2.png" alt="Caguasaki ZX10R Astrobee" class="secondary-img"></div>
+                        <div class="card-info"><h4>Caguasaki ZX10R Astrobee</h4></div>
+                    </div>
+                    <!-- Hayabusa v2 -->
+                    <div class="netflix-card" onclick="openModal(this)" data-images="assets/coches vip/Hayabusa v2.png,assets/coches vip/Hayabusa v22.png">
+                        <div class="card-img"><img src="assets/coches vip/Hayabusa v2.png" alt="Hayabusa v2" class="primary-img"><img src="assets/coches vip/Hayabusa v22.png" alt="Hayabusa v2" class="secondary-img"></div>
+                        <div class="card-info"><h4>Hayabusa v2</h4></div>
+                    </div>
+                    <!-- Shadow Diva Chopper -->
+                    <div class="netflix-card" onclick="openModal(this)" data-images="assets/coches vip/Shadow Diva Chopper.png,assets/coches vip/Shadow Diva Chopper2.png">
+                        <div class="card-img"><img src="assets/coches vip/Shadow Diva Chopper.png" alt="Shadow Diva Chopper" class="primary-img"><img src="assets/coches vip/Shadow Diva Chopper2.png" alt="Shadow Diva Chopper" class="secondary-img"></div>
+                        <div class="card-info"><h4>Shadow Diva Chopper</h4></div>
+                    </div>
+                    <!-- Skull Chopper -->
+                    <div class="netflix-card" onclick="openModal(this)" data-images="assets/coches vip/Skull Chopper.png,assets/coches vip/Skull Chopper2.png">
+                        <div class="card-img"><img src="assets/coches vip/Skull Chopper.png" alt="Skull Chopper" class="primary-img"><img src="assets/coches vip/Skull Chopper2.png" alt="Skull Chopper" class="secondary-img"></div>
+                        <div class="card-info"><h4>Skull Chopper</h4></div>
+                    </div>
+                    <!-- Victory Chopper -->
+                    <div class="netflix-card" onclick="openModal(this)" data-images="assets/coches vip/Victory Chopper.png,assets/coches vip/Victory Chopper2.png">
+                        <div class="card-img"><img src="assets/coches vip/Victory Chopper.png" alt="Victory Chopper" class="primary-img"><img src="assets/coches vip/Victory Chopper2.png" alt="Victory Chopper" class="secondary-img"></div>
+                        <div class="card-info"><h4>Victory Chopper</h4></div>
+                    </div>
+                    <!-- Volva Chopper -->
+                    <div class="netflix-card" onclick="openModal(this)" data-images="assets/coches vip/Volva Chopper.png,assets/coches vip/Volva Chopper2.png">
+                        <div class="card-img"><img src="assets/coches vip/Volva Chopper.png" alt="Volva Chopper" class="primary-img"><img src="assets/coches vip/Volva Chopper2.png" alt="Volva Chopper" class="secondary-img"></div>
+                        <div class="card-info"><h4>Volva Chopper</h4></div>
+                    </div>
+                    <!-- X450 Crossbike -->
+                    <div class="netflix-card" onclick="openModal(this)" data-images="assets/coches vip/X450 Crossbike.png,assets/coches vip/X450 Crossbike2.png">
+                        <div class="card-img"><img src="assets/coches vip/X450 Crossbike.png" alt="X450 Crossbike" class="primary-img"><img src="assets/coches vip/X450 Crossbike2.png" alt="X450 Crossbike" class="secondary-img"></div>
+                        <div class="card-info"><h4>X450 Crossbike</h4></div>
+                    </div>
+                </div>
+                <button class="scroll-btn scroll-right" onclick="document.getElementById('row-motos').scrollBy({left: 400, behavior: 'smooth'})"><i class="fa-solid fa-chevron-right"></i></button>
+            </div>
+        </div>
+        </div>
+
+        <!-- Botones Vehículos Centrales -->
+        <div class="vip-buttons-section">
+            <a href="https://discord.com/channels/1479673755373666376/1479673756787015743/1482013674242703462"
+                target="_blank" class="btn btn-primary btn-large">VEHÍCULOS VIP</a>
+            <a href="https://discord.com/channels/1479673755373666376/1479673756787015743/1482013674242703462"
+                target="_blank" class="btn btn-primary btn-large">VEHÍCULO EXCLUSIVO</a>
+        </div>
+
+
+
+        <table class="vip-table">
+            <thead>
+                <tr class="table-category">
+                    <th colspan="2">PERSONAJES & EXTRAS</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr onclick="window.open('https://discord.com/channels/1479673755373666376/1479673756787015743/1482013674242703462', '_blank')"
+                    style="cursor: pointer;">
+                    <td>Ped (animal)</td>
+                    <td><span class="text-primary">200 XP</span></td>
+                </tr>
+                <tr onclick="window.open('https://discord.com/channels/1479673755373666376/1479673756787015743/1482013674242703462', '_blank')"
+                    style="cursor: pointer;">
+                    <td>Ped (persona)</td>
+                    <td><span class="text-primary">200 XP</span></td>
+                </tr>
+                <tr onclick="window.open('https://discord.com/channels/1479673755373666376/1479673756787015743/1482013674242703462', '_blank')"
+                    style="cursor: pointer;">
+                    <td>Actualizar ped</td>
+                    <td><span class="text-primary">250 XP</span></td>
+                </tr>
+                <tr onclick="window.open('https://discord.com/channels/1479673755373666376/1479673756787015743/1482013674242703462', '_blank')"
+                    style="cursor: pointer;">
+                    <td>Segundo slot</td>
+                    <td><span class="text-primary">250 XP</span></td>
+                </tr>
+            </tbody>
+        </table>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer container">
+        <div class="footer-content glass">
+            <div class="footer-left">
+                <div class="logo-text">
+                    <span class="text-primary">D</span>AY ONE
+                </div>
+                <p class="footer-desc">Servidor de Roleplay exclusivo. La historia la escribes tú.</p>
+            </div>
+            <div class="footer-links" style="margin-left: auto;">
+                <a href="https://discord.gg/2w2SakPv6j" target="_blank"><i class="fa-brands fa-discord"></i> Discord</a>
+                <a href="terminos.html" style="font-size: 0.8rem; opacity: 0.8;">Términos y Condiciones</a>
+                <a href="privacidad.html" style="font-size: 0.8rem; opacity: 0.8;">Privacidad</a>
+            </div>
+        </div>
+        <p class="copyright">&copy; 2026 DAY ONE Roleplay. Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- Image Expansion Modal -->
+    <div id="imageModal" class="modal">
+        <div class="modal-content" id="modalImageContainer">
+            <!-- Dynamically filled via JS -->
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script>
+        let currentImageIndex = 0;
+        let modalImages = [];
+
+        function openModal(element) {
+            const modal = document.getElementById("imageModal");
+            const modalContent = document.getElementById("modalImageContainer");
+            const imagesAttr = element.getAttribute("data-images");
+            const titleText = element.querySelector("h4").innerText;
+
+            modalImages = imagesAttr ? imagesAttr.split(",").map(s => s.trim()) : [];
+            currentImageIndex = 0;
+
+            modalContent.innerHTML = `
+                <div class="close-modal" onclick="closeModal()"><i class="fa-solid fa-xmark"></i></div>
+                <h4 class="modal-title">${titleText}</h4>
+                <div class="carousel-stage">
+                    <img id="carouselMainImg" src="${modalImages[0]}" alt="Vehicle">
+                    ${modalImages.length > 1 ? `
+                        <div class="carousel-nav">
+                            <button class="carousel-btn prev" onclick="changeImage(-1)"><i class="fa-solid fa-chevron-left"></i></button>
+                            <button class="carousel-btn next" onclick="changeImage(1)"><i class="fa-solid fa-chevron-right"></i></button>
+                        </div>
+                    ` : ''}
+                </div>
+                <div class="carousel-thumbnails" id="thumbRow">
+                    ${modalImages.map((src, i) => `
+                        <div class="thumb-item ${i === 0 ? 'active' : ''}" onclick="goToImage(${i})">
+                            <img src="${src}" alt="Thumb">
+                        </div>
+                    `).join('')}
+                </div>
+            `;
+
+            modal.style.display = "flex";
+            document.body.style.overflow = "hidden";
+        }
+
+        function changeImage(step) {
+            currentImageIndex = (currentImageIndex + step + modalImages.length) % modalImages.length;
+            updateCarousel();
+        }
+
+        function goToImage(index) {
+            currentImageIndex = index;
+            updateCarousel();
+        }
+
+        function updateCarousel() {
+            const img = document.getElementById("carouselMainImg");
+            const thumbs = document.querySelectorAll(".thumb-item");
+            
+            img.style.opacity = "0";
+            img.style.transform = "scale(0.95)";
+            
+            setTimeout(() => {
+                img.src = modalImages[currentImageIndex];
+                img.style.opacity = "1";
+                img.style.transform = "scale(1)";
+            }, 250);
+
+            thumbs.forEach((thumb, i) => {
+                thumb.classList.toggle("active", i === currentImageIndex);
+            });
+        }
+
+        function closeModal() {
+            document.getElementById("imageModal").style.display = "none";
+            document.body.style.overflow = "auto";
+        }
+
+        window.onclick = function(event) {
+            const modal = document.getElementById("imageModal");
+            if (event.target == modal) {
+                closeModal();
+            }
+        }
+
+        document.addEventListener('keydown', (e) => {
+            if (e.key === "Escape") closeModal();
+            const modal = document.getElementById("imageModal");
+            if (modal.style.display === "flex") {
+                if (e.key === "ArrowLeft") changeImage(-1);
+                if (e.key === "ArrowRight") changeImage(1);
+            }
+        });
+    </script>
+</body>
+</html>
+html>
+
+
+</html>
